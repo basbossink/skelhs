@@ -9,12 +9,12 @@ title: Skelhs
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>basbossink/skelhs @ GitHub</title>
+    <title>{{ page.title }</title>
 	
 	<style type="text/css">
 		body {
   		margin-top: 1.0em;
-  		background-color: #f77b90;
+  		background-color: #FFFFF;
 		  font-family: "Helvetica,Arial,FreeSans"; 
   		color: #000000;
     }
@@ -22,11 +22,11 @@ title: Skelhs
       margin: 0 auto;
       width: 700px;
     }
-		h1 { font-size: 3.8em; color: #08846f; margin-bottom: 3px; }
+		h1 { font-size: 3.8em;  margin-bottom: 3px; }
 		h1 .small { font-size: 0.4em; }
 		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #08846f; }
-    h3 { text-align: center; color: #08846f; }
+		h2 { font-size: 1.5em;  }
+    h3 { text-align: center;  }
     a { color: #08846f; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
@@ -56,18 +56,22 @@ title: Skelhs
       A PasteScript template for a simple Haskell module including HUnit and QuickCheck tests.
     </div>
 
-    <p>Skelhs is simple code generator utilising PasteScript to generate the boilerplate contents of a Haskell module and the associated test module.</p><h2>Dependencies</h2>
-<p>Python
-PasteScript
-Cheetah</p>
+    <p>Skelhs is a simple code generator utilising <a href="http://pythonpaste.org/script/">PasteScript</a> to generate the boilerplate contents of a Haskell module and the associated test module.</p>
+    <h2>Dependencies</h2>
+    <p><a href="http://www.python.org">Python</a>
+    <a href="http://pythonpaste.org/script/"> PasteScript</a>
+    <a href="http://www.cheetahtemplate.org">Cheetah</a></p>
 <h2>Install</h2>
 <p>
-# @git clone git://github.com/basbossink/skelhs.git@
-# @cd skelhs.basicmodule@
-# @python setup.py install@
-## Verify your install with: @paster create --list-templates@
-The list of available templates should contain the following line:
-@skelhs_basic_module:  A haskell module with a test environment@</p>
+<pre>
+$ git clone git://github.com/basbossink/skelhs.git
+$ cd skelhs.basicmodule
+$ python setup.py install
+# Verify your install with: 
+$ paster create --list-templates
+# The list of available templates should contain the following line:
+skelhs_basic_module:  A haskell module with a test environment
+</pre></p>
 <h2>License</h2>
 <p>GPLv3</p>
 <h2>Authors</h2>
