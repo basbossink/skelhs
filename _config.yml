@@ -1,4 +1,4 @@
 destination: ./_site
-auto:   false
+auto:   true
 lsi: fals
 pygments: true
