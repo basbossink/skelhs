@@ -1,0 +1,30 @@
+-- | Tests for $module_name
+module ${module_name}_Test
+where
+
+import Test.QuickCheck
+import Test.QuickCheck.Batch
+import Test.HUnit
+
+import $module_name
+
+-- | QuickCheck properties
+prop_
+
+-- | HUnit tests
+test = TestCase $ assertEqual "" ()
+
+options = TestOptions { no_of_tests = 200
+                      , length_of_tests = 1
+                      , debug_tests = False }
+
+allChecks = [ 
+              run (prop_)
+            ]
+
+testList = TestList $ [ test ]
+
+main = do
+    runTests "simple" options allChecks
+    runTestTT testList
+    

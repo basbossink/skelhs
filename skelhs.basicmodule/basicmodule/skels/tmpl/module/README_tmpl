@@ -1,0 +1,10 @@
+$module_name
+
+$description
+
+Directory contents
+- ${module_name}.hs The sources for the $module_name module 
+- ${module_name}_Test.hs The tests for the $module_name module
+
+maintained by: $author
+$author_email
