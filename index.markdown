@@ -12,8 +12,13 @@ Skelhs is a simple code generator utilising [PasteScript][1] to generate the boi
 ## Installation requirements
 
 - [Python 2.6][2]
-- [PasteScript][1]
-- [Cheetah][3]
+- [PasteScript][1] installation should be as simple as:
+
+        $ easy_install PasteScript
+
+- [Cheetah][3] is a dependency of PasteScript so it should have been
+  installed automagically in the previous step. It's listed here for
+completeness only.
 
 [1]: http://pythonpaste.org/script/
 [2]: http://www.python.org
@@ -38,6 +43,4 @@ Skelhs is a simple code generator utilising [PasteScript][1] to generate the boi
 
     $ paster create -t skelhs_basic_module <target_dir_name> 
 
-Note that the `target_dir_name` will be created if it does not exist.
-
-
+Note that the `target_dir_name` directory will be created if it does not exist.
